@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCMsg", "MFCMsg\MFCMsg.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCCmd", "MFCCmd\MFCCmd.vcxproj", "{9895EA76-2BE7-47FF-97BD-4960350A216E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCMenu", "MFCMenu\MFCMenu.vcxproj", "{7878D43B-288B-4AAF-BF8E-DE71F021FB49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{9895EA76-2BE7-47FF-97BD-4960350A216E}.Release|x64.Build.0 = Release|x64
 		{9895EA76-2BE7-47FF-97BD-4960350A216E}.Release|x86.ActiveCfg = Release|Win32
 		{9895EA76-2BE7-47FF-97BD-4960350A216E}.Release|x86.Build.0 = Release|Win32
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Debug|x64.ActiveCfg = Debug|x64
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Debug|x64.Build.0 = Debug|x64
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Debug|x86.ActiveCfg = Debug|Win32
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Debug|x86.Build.0 = Debug|Win32
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Release|x64.ActiveCfg = Release|x64
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Release|x64.Build.0 = Release|x64
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Release|x86.ActiveCfg = Release|Win32
+		{7878D43B-288B-4AAF-BF8E-DE71F021FB49}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,4 @@
+
 #include<afxwin.h>
 
 #define WM_MYMESSAGE WM_USER+1001 //自定义消息处理
@@ -19,6 +20,7 @@ public:
 	LRESULT OnMyMessage(WPARAM wParam, LPARAM lParam);
 };
 
+/*消息映射机制*/
 BEGIN_MESSAGE_MAP(CMyFrameWnd, CFrameWnd)
 	ON_WM_CREATE()//注册create消息处理函数
 	ON_WM_PAINT()//注册paint消息处理函数
