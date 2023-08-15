@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7878d43b-288b-4aaf-bf8e-de71f021fb49}</ProjectGuid>
-    <RootNamespace>MFCMenu</RootNamespace>
+    <ProjectGuid>{f7bccb28-d214-4bb4-944a-a452a166eac0}</ProjectGuid>
+    <RootNamespace>MFCToolBar</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,13 +128,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MFCMenu.cpp" />
+    <ClCompile Include="MFCToolBar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCToolBar.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MFCMenu.rc" />
+    <Image Include="toolbar1.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

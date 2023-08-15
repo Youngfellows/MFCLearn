@@ -28,7 +28,7 @@ int CMyFrameWnd::OnCreate(LPCREATESTRUCT pcs)
 {
 	menu.LoadMenu(IDR_MENU1);
 	//this->SetMenu(&menu);
-	::SetMenu(this->m_hWnd, menu.m_hMenu);
+	::SetMenu(this->m_hWnd, menu.m_hMenu);  
 	return CFrameWnd::OnCreate(pcs);
 }
 
