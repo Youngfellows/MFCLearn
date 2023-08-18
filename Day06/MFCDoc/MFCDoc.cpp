@@ -8,23 +8,33 @@ class CMyDoc : public CDocument {
 public:
 	afx_msg void OnNew();
 	afx_msg void OnOpen();
-
+public:
+	CString str1;//数据1
+	CString str2;//数据2
 };
 BEGIN_MESSAGE_MAP(CMyDoc, CDocument)
-	//ON_COMMAND(ID_NEW, OnNew)
-	//ON_COMMAND(ID_OPEN, OnOpen)
+	ON_COMMAND(ID_NEW, OnNew)
+	ON_COMMAND(ID_OPEN, OnOpen)
 END_MESSAGE_MAP()
 
 void CMyDoc::OnNew()
 {
 	AfxMessageBox("文档类处理了ON_COMANDX的OnNew消息");
+	this->str1 = "From newButton window";//接收到的数据
+	this->str2 = "I am a student";
+	this->UpdateAllViews(NULL);//刷新和这个文档类对象（this）关联的所有视图窗口
 }
 
 void CMyDoc::OnOpen()
 {
 	AfxMessageBox("文档类处理了ON_COMANDX的OnOpen消息");
+	this->str1 = "From openButton window";//接收到的数据
+	this->str2 = "I am a teacher";
+	//this->UpdateAllViews(NULL);//刷新和这个文档类对象（this）关联的所有视图窗口
+	POSITION pos = this->GetFirstViewPosition(); //GetFirstXXXPosition
+	CView* pView = this->GetNextView(pos);//GetNextXXX
+	this->UpdateAllViews(pView);//刷新和这个文档类对象（this）关联的除了pView指向的视图窗口
 }
-
 
 
 /*视图窗口类*/
@@ -57,7 +67,10 @@ void CMyView::OnOpen()
 
 void CMyView::OnDraw(CDC* pDC)
 {
-	pDC->TextOut(100, 100, "我是视图窗口");
+	//获取文档类对象
+	CMyDoc* pDoc = (CMyDoc*)this->m_pDocument;
+	pDC->TextOut(100, 100, pDoc->str1);
+	pDC->TextOut(100, 130, pDoc->str2);
 }
 
 int CMyView::OnCreate(LPCREATESTRUCT pcs)
@@ -121,7 +134,7 @@ public:
 	afx_msg void OnNew();
 };
 BEGIN_MESSAGE_MAP(CMyWinApp, CWinApp)
-	ON_COMMAND(ID_NEW, OnNew)
+	//ON_COMMAND(ID_NEW, OnNew)
 END_MESSAGE_MAP()
 
 void CMyWinApp::OnNew()
