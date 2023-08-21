@@ -27,6 +27,8 @@ BEGIN_MESSAGE_MAP(CMFCSdiWizardView, CView)
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CView::OnFilePrintPreview)
+	ON_WM_LBUTTONDOWN()
+	ON_COMMAND(ID_TEST_TT, &CMFCSdiWizardView::OnTest)
 END_MESSAGE_MAP()
 
 // CMFCSdiWizardView construction/destruction
@@ -103,3 +105,18 @@ CMFCSdiWizardDoc* CMFCSdiWizardView::GetDocument() const // non-debug version is
 
 
 // CMFCSdiWizardView message handlers
+
+
+void CMFCSdiWizardView::OnLButtonDown(UINT nFlags, CPoint point)
+{
+	// TODO: 在此添加消息处理程序代码和/或调用默认值
+
+	CView::OnLButtonDown(nFlags, point);
+}
+
+
+void CMFCSdiWizardView::OnTest()
+{
+	// TODO: 在此添加命令处理程序代码
+	AfxMessageBox("点了菜单项");
+}
