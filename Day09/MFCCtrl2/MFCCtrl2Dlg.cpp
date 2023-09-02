@@ -133,6 +133,7 @@ void CMFCCtrl2Dlg::OnClickedRadio1()//ÄÐ
 
 void CMFCCtrl2Dlg::OnClickedRadio2()//Å®
 {
+	//xxxx
 	m_r2.SetCheck(TRUE);
 	m_r1.SetCheck(FALSE);
 }
