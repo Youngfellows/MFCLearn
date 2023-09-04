@@ -1,27 +1,27 @@
 ﻿
-// MFCCtrl3.cpp: 定义应用程序的类行为。
+// MFCCtrl1.cpp: 定义应用程序的类行为。
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "MFCCtrl3.h"
-#include "MFCCtrl3Dlg.h"
+#include "MFCCtrl1.h"
+#include "MFCCtrl1Dlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// CMFCCtrl3App
+// CMFCCtrl1App
 
-BEGIN_MESSAGE_MAP(CMFCCtrl3App, CWinApp)
+BEGIN_MESSAGE_MAP(CMFCCtrl1App, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
 
-// CMFCCtrl3App 构造
+// CMFCCtrl1App 构造
 
-CMFCCtrl3App::CMFCCtrl3App()
+CMFCCtrl1App::CMFCCtrl1App()
 {
 	// 支持重新启动管理器
 	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_RESTART;
@@ -31,14 +31,14 @@ CMFCCtrl3App::CMFCCtrl3App()
 }
 
 
-// 唯一的 CMFCCtrl3App 对象
+// 唯一的 CMFCCtrl1App 对象
 
-CMFCCtrl3App theApp;
+CMFCCtrl1App theApp;
 
 
-// CMFCCtrl3App 初始化
+// CMFCCtrl1App 初始化
 
-BOOL CMFCCtrl3App::InitInstance()
+BOOL CMFCCtrl1App::InitInstance()
 {
 	// 如果一个运行在 Windows XP 上的应用程序清单指定要
 	// 使用 ComCtl32.dll 版本 6 或更高版本来启用可视化方式，
@@ -71,7 +71,7 @@ BOOL CMFCCtrl3App::InitInstance()
 	// 例如修改为公司或组织名
 	SetRegistryKey(_T("应用程序向导生成的本地应用程序"));
 
-	CMFCCtrl3Dlg dlg;
+	CMFCCtrl1Dlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)

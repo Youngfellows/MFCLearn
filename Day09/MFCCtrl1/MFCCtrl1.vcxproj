@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{4EFB4F24-B906-4BAE-992B-2F1636EC4810}</ProjectGuid>
+    <ProjectGuid>{D4498159-07DB-4285-97D8-70CE32B251DA}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
-    <RootNamespace>MFCCtrl3</RootNamespace>
+    <RootNamespace>MFCCtrl1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -184,15 +184,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
-    <ClInclude Include="MFCCtrl3.h" />
-    <ClInclude Include="MFCCtrl3Dlg.h" />
+    <ClInclude Include="MFCCtrl1.h" />
+    <ClInclude Include="MFCCtrl1Dlg.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MFCCtrl3.cpp" />
-    <ClCompile Include="MFCCtrl3Dlg.cpp" />
+    <ClCompile Include="MFCCtrl1.cpp" />
+    <ClCompile Include="MFCCtrl1Dlg.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -201,13 +201,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MFCCtrl3.rc" />
+    <ResourceCompile Include="MFCCtrl1.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MFCCtrl3.rc2" />
+    <None Include="res\MFCCtrl1.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MFCCtrl3.ico" />
+    <Image Include="res\MFCCtrl1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

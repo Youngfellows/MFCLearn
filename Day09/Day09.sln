@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCCtrl2", "MFCCtrl2\MFCCtr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCCtrl3", "MFCCtrl3\MFCCtrl3.vcxproj", "{4EFB4F24-B906-4BAE-992B-2F1636EC4810}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCCtrl1", "MFCCtrl1\MFCCtrl1.vcxproj", "{D4498159-07DB-4285-97D8-70CE32B251DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{4EFB4F24-B906-4BAE-992B-2F1636EC4810}.Release|x64.Build.0 = Release|x64
 		{4EFB4F24-B906-4BAE-992B-2F1636EC4810}.Release|x86.ActiveCfg = Release|Win32
 		{4EFB4F24-B906-4BAE-992B-2F1636EC4810}.Release|x86.Build.0 = Release|Win32
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Debug|x64.ActiveCfg = Debug|x64
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Debug|x64.Build.0 = Debug|x64
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Debug|x86.Build.0 = Debug|Win32
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Release|x64.ActiveCfg = Release|x64
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Release|x64.Build.0 = Release|x64
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Release|x86.ActiveCfg = Release|Win32
+		{D4498159-07DB-4285-97D8-70CE32B251DA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

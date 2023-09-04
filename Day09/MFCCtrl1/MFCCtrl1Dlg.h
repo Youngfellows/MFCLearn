@@ -1,20 +1,20 @@
 ﻿
-// MFCCtrl3Dlg.h: 头文件
+// MFCCtrl1Dlg.h: 头文件
 //
 
 #pragma once
 
 
-// CMFCCtrl3Dlg 对话框
-class CMFCCtrl3Dlg : public CDialogEx
+// CMFCCtrl1Dlg 对话框
+class CMFCCtrl1Dlg : public CDialogEx
 {
 // 构造
 public:
-	CMFCCtrl3Dlg(CWnd* pParent = nullptr);	// 标准构造函数
+	CMFCCtrl1Dlg(CWnd* pParent = nullptr);	// 标准构造函数
 
 // 对话框数据
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_MFCCTRL3_DIALOG };
+	enum { IDD = IDD_MFCCTRL1_DIALOG };
 #endif
 
 	protected:
@@ -31,13 +31,13 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
+	CListBox m_vlistbox;
+	CListBox m_hlistbox;
+	CStatic m_st1;
+	CStatic m_st2;
 	afx_msg void OnClickedClear();
 	afx_msg void OnClickedDel();
 	afx_msg void OnClickedText();
 	afx_msg void OnClickedData();
-	CComboBox m_simple;
-	CComboBox m_droplist;
-	CComboBox m_dropdown;
-	afx_msg void OnSelchangeSimple();
-	afx_msg void OnEditchangeSimple();
+	afx_msg void OnSelchangeVlist();
 };

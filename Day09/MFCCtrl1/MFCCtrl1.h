@@ -1,5 +1,5 @@
 ﻿
-// MFCCtrl3.h: PROJECT_NAME 应用程序的主头文件
+// MFCCtrl1.h: PROJECT_NAME 应用程序的主头文件
 //
 
 #pragma once
@@ -11,14 +11,14 @@
 #include "resource.h"		// 主符号
 
 
-// CMFCCtrl3App:
-// 有关此类的实现，请参阅 MFCCtrl3.cpp
+// CMFCCtrl1App:
+// 有关此类的实现，请参阅 MFCCtrl1.cpp
 //
 
-class CMFCCtrl3App : public CWinApp
+class CMFCCtrl1App : public CWinApp
 {
 public:
-	CMFCCtrl3App();
+	CMFCCtrl1App();
 
 // 重写
 public:
@@ -29,4 +29,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern CMFCCtrl3App theApp;
+extern CMFCCtrl1App theApp;
