@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCFind", "MFCFind\MFCFind.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCList", "MFCList\MFCList.vcxproj", "{B4580BF1-431C-419A-9872-577FD56529D6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCTree", "MFCTree\MFCTree.vcxproj", "{6AF3DC0F-6042-468F-82B0-3857104276A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{B4580BF1-431C-419A-9872-577FD56529D6}.Release|x64.Build.0 = Release|x64
 		{B4580BF1-431C-419A-9872-577FD56529D6}.Release|x86.ActiveCfg = Release|Win32
 		{B4580BF1-431C-419A-9872-577FD56529D6}.Release|x86.Build.0 = Release|Win32
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Debug|x64.ActiveCfg = Debug|x64
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Debug|x64.Build.0 = Debug|x64
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Debug|x86.Build.0 = Debug|Win32
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Release|x64.ActiveCfg = Release|x64
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Release|x64.Build.0 = Release|x64
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Release|x86.ActiveCfg = Release|Win32
+		{6AF3DC0F-6042-468F-82B0-3857104276A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
