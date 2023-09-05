@@ -76,6 +76,7 @@ BOOL CMFCListDlg::OnInitDialog()
 */
 void CMFCListDlg::ShowFile(CString path)
 {
+	m_list.DeleteAllItems();
 	CString strPath = path;
 	strPath += "/*.*";
 	CFileFind find;//文件搜索对象
@@ -90,7 +91,7 @@ void CMFCListDlg::ShowFile(CString path)
 		if (find.IsDirectory())
 		{
 			m_list.InsertItem(i, filename, 0);
-			m_list.SetItemData(i, (DWORD)filepath);
+			m_list.SetItemData(i, (DWORD_PTR)filepath);
 		}
 		else {
 			m_list.InsertItem(i, filename, 1);
@@ -180,7 +181,7 @@ void CMFCListDlg::OnDblclkList(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	LPNMITEMACTIVATE pNMItemActivate = reinterpret_cast<LPNMITEMACTIVATE>(pNMHDR);
 	*pResult = 0;
-	DWORD nData = m_list.GetItemData(pNMItemActivate->iItem);//双击选项
+	DWORD_PTR nData = m_list.GetItemData(pNMItemActivate->iItem);//双击选项
 	CString* filepath = (CString*)nData;
 	if (filepath != NULL)
 	{
